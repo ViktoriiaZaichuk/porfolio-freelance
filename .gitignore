@@ -1,0 +1,26 @@
+# Ignore uploads directory
+wp-content/uploads/
+
+# Ignore configuration files
+wp-config.php
+
+# Ignore cache files
+wp-content/cache/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore Composer dependencies
+vendor/
+
+# Ignore log and temporary files
+*.log
+*.tmp
+*.temp
+
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables file
+.env
