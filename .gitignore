@@ -6,6 +6,7 @@ wp-config.php
 
 # Ignore cache files
 wp-content/cache/
+wp-includes/
 
 # Ignore Node.js modules
 node_modules/
@@ -24,3 +25,4 @@ Thumbs.db
 
 # Ignore environment variables file
 .env
+.htaccess

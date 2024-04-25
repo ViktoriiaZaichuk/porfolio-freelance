@@ -1,0 +1,24 @@
+{
+  "name": "porfolio-freelance",
+  "version": "1.0.0",
+  "description": "This repository serves as a platform for developing a WordPress theme from scratch, tailored specifically for showcasing web design portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass wp-content/themes/viktoriia-zaichuk/assets/styles/scss/index.scss wp-content/themes/viktoriia-zaichuk/assets/styles/css/index.css --style compressed",
+    "watch:sass": "sass --watch wp-content/themes/viktoriia-zaichuk/assets/styles/scss:wp-content/themes/viktoriia-zaichuk/assets/styles/css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktoriiaZaichuk/porfolio-freelance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViktoriiaZaichuk/porfolio-freelance/issues"
+  },
+  "homepage": "https://github.com/ViktoriiaZaichuk/porfolio-freelance#readme",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}

@@ -1,0 +1,11 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+
+@import "./globals/reset";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/homepage";
+@import "./pages/404page";
