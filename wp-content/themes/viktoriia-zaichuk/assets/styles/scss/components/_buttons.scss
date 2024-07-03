@@ -1,0 +1,49 @@
+/* NAVIGATION BUTTON */
+.nav-button {
+    border: $grey 2px solid;
+    padding: 0 .6rem;
+    backdrop-filter: blur(2px);
+    transition: all .3s;
+    line-height: .8;
+    a {
+        text-transform: uppercase;
+        font-family: $fontBodyTextThin;
+        line-height: 2;
+        font-size: .6rem;
+    }
+    &:hover {
+        backdrop-filter: blur(4px);	
+        border: $pink 2px solid;
+        background-color: $pink-opac;
+    }
+    @include screen768 {
+        padding: 0 .5rem;
+        a {
+            font-size: .5rem;
+        }
+    }
+    @include screen400 {
+        padding: 0 .3rem;
+        a {
+            font-size: .5rem;
+        }
+    }
+}
+
+.contact-btn {
+    font-family: $fontBodyText;
+    display: block;
+    cursor: pointer;
+    margin-top: .5rem;
+    background-color: $black;
+    color: $pink;
+    border-style: unset;
+    padding: .2rem 1rem;
+    font-size: .6rem;
+    border: 1px solid $black;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out; 
+    &:hover {
+        background-color: $pink;
+        color: $black;
+    }
+}

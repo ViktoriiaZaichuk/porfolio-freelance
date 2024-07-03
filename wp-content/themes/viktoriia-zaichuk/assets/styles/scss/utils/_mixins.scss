@@ -1,0 +1,104 @@
+$screen1550: 1550px;
+$screen1300: 1300px;
+$screen1024: 1024px;
+$screen768: 768px;
+$screen550: 550px;
+$screen400: 400px;
+
+@mixin screen1550 {
+    @media (max-width: #{$screen1550}) {
+      @content;
+    }
+}
+
+
+@mixin screen1300 {
+    @media (max-width: #{$screen1300}) {
+      @content;
+    }
+}
+
+@mixin screen1024 {
+    @media (max-width: #{$screen1024}) {
+      @content;
+    }
+}
+
+@mixin screen768 {
+    @media (max-width: #{$screen768}) {
+      @content;
+    }
+}
+
+@mixin screen550 {
+    @media (max-width: #{$screen550}) {
+      @content;
+    }
+}
+
+@mixin screen400 {
+  @media (max-width: #{$screen400}) {
+    @content;
+  }
+}
+
+
+/* PROJECT CARD */
+@mixin projectCard {
+    width: 300px;
+    div {
+      width: 100%;
+      height: 450px;
+      background-color: $black;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      & span {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: $yellow;
+        text-transform: uppercase;
+        font-family: $displayFont;
+        font-size: 1.2rem;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: grayscale(100%) blur(1px);
+        transition: all .3s;
+        &:hover {
+          filter: grayscale(100%) blur(0px);
+        }
+      }
+    }
+    h4 {
+      margin-top: .5rem;
+      text-align: center;
+      span {
+        font-size: .5rem;
+        font-weight: 300;
+        display: inline-block;
+        text-transform: uppercase;
+        margin-bottom: .3rem;
+        border: 1px solid $pink;
+        border-radius: 20px;
+        padding: .2rem .5rem;
+        text-align: center;
+      }
+    }
+    @include screen1024 {
+      width: 240px;
+    }
+    @include screen768 {
+      width: 300px;
+    }
+    @include screen550() {
+      width: 100%;
+    }
+}

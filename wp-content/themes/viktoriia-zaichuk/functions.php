@@ -11,7 +11,7 @@ function mytheme_supports() {
 
 
 function enqueue_styles() {
-    wp_enqueue_style('theme-style', get_stylesheet_uri() . '/style.css', array(), false, 'all');
+    wp_enqueue_style('theme-style', get_stylesheet_uri() . '', array(), false, 'all');
     wp_enqueue_style('theme-style');
 
     wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/styles/css/index.css', array(), false, 'all');

@@ -1,0 +1,79 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Rosamila';
+    src: url("../../fonts/rosamila_condensed.woff2") format('woff2'),
+         url("../../fonts/rosamila_condensed.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealbold';
+    src: url('../../fonts/neuemontreal-bold.woff2') format('woff2'),
+         url('../../fonts/neuemontreal-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'pp_neue_montrealbook';
+    src: url('../../fonts/neuemontreal-book.woff2') format('woff2'),
+         url('../../fonts/neuemontreal-book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealitalic';
+    src: url('../../fonts/neuemontreal-italic.woff2') format('woff2'),
+         url('../../fonts/neuemontreal-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealmedium';
+    src: url('../../fonts/neuemontreal-medium.woff2') format('woff2'),
+         url('../../fonts/neuemontreal-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealSBdIt';
+    src: url('../../fonts/neuemontreal-semibolditalic.woff2') format('woff2'),
+         url('../../fonts/neuemontreal-semibolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealthin';
+    src: url('../../fonts/neuemontreal-thin.woff2') format('woff2'),
+         url('../../fonts/neuemontreal-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$displayFont: 'Rosamila', sans-serif;
+$fontBodyText: 'pp_neue_montrealbook', sans-serif;
+$fontBodyTextThin: 'pp_neue_montrealthin', sans-serif;
+$fontBodyTextItalic: 'pp_neue_montrealitalic', sans-serif;
+$fontBodyTextSBdIt: 'pp_neue_montrealSBdIt', sans-serif;
+$fontBodyTextSBold: 'pp_neue_montrealbold', sans-serif;
+
+
+/* COLORS */
+$black: #282424;
+$grey: #a2a2a20b;
+$white: #FFFEF6;
+$yellow: #ffe44f;
+$pink: #ffa4a4;
+$pink-opac: #ffa4a430;
