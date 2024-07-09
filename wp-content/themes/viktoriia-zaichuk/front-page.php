@@ -1,37 +1,79 @@
 <?php get_header(); ?>
+    <div id="loader" class="loader">
+        <div class="loader-txt" id="loader-txt">
+            <span>d</span>
+            <span>e</span>
+            <span>s</span>
+            <span>i</span>
+            <span>g</span>
+            <span>n</span>
+            <span class="space">&</span>
+            <span>d</span>
+            <span>é</span>
+            <span>v</span>
+            <span>e</span>
+            <span>l</span>
+            <span>o</span>
+            <span>p</span>
+            <span>p</span>
+            <span>e</span>
+            <span>m</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+        </div>
+        <div class="loader-number" id="loadingNumber">0%</div>
+    </div>
     <main class="home">
         <section class="home--hero">
             <div class="home--hero__txt">
                 <div>
-                    <h1>Webdesigner & Développeur Web à Toulouse</h1>
-                    <h2>Spécialisée dans la Création Personnalisée de Sites Internet, du Design au Développement.</h2>
+                    <h1 class="loader-gsap-hero">Webdesigner & Développeur Web à Toulouse</h1>
+                    <h2 class="loader-gsap-hero">Spécialisée dans la Création Personnalisée de Sites Internet, du Design au Développement.</h2>
                 </div>
             </div>
             <div class="home--hero__tags">
-                <span>*2024</span>
-                <h5>#design #développement</h5>
-                <span>TOULOUSE</span>
+                <span class="hp-gsap-hero-scroll">*2024</span>
+                <h5 class="hp-gsap-hero-scroll">#design #développement</h5>
+                <span class="hp-gsap-hero-scroll">TOULOUSE</span>
             </div>
         </section>
         
         <section id="about" class="home--intro">
-            <p>Je suis Viktoriia Zaichuk, <strong>webdesigner</strong> et <strong>développeuse web</strong> freelance à Toulouse. 
-                Je vous accompagne dans la création de votre site internet sur mesure, de la conception du design à la mise en ligne. 
+            <div class="hp-gsap-intro-scroll scroll-wrapper">
+                <div class="line"><span>Je suis Viktoriia Zaichuk, <strong>webdesigner</strong> et </span></div>
+                <div class="line"><span><strong>développeuse web</strong> freelance à Toulouse.</span></div>
+                <div class="line"><span>Je vous accompagne dans la création de votre </span></div>
+                <div class="line"><span>site internet sur mesure, de la conception</span></div>
+                <div class="line"><span>du design à la mise en ligne.</span></div>
+            </div>
+            <div class="hp-gsap-intro-scroll-2 scroll-wrapper">
+                <div class="line"><span>Je vous propose des services de <strong>webdesign</strong>, </span></div>
+                <div class="line"><span>de <strong>développement web</strong> et de <strong>SEO</strong>, </span></div>
+                <div class="line"><span>pour vous permettre de vous démarquer sur le web </span></div>
+                <div class="line"><span>et valoriser votre activité. Mon objectif est de créer </span></div>
+                <div class="line"><span>des sites internet <strong>performants</strong>, <strong>esthétiques</strong> </span></div>
+                <div class="line"><span>et <strong>optimisés</strong> pour le référencement naturel </span></div>
+                <div class="line"><span>afin d'améliorer votre visibilité en ligne. </span></div>
+            </div>
+            <p class="home--intro__p1">
+                Je suis Viktoriia Zaichuk, <strong>webdesigner</strong> et <strong>développeuse web</strong> freelance à Toulouse.
+                Je vous accompagne dans la création de votre site internet sur mesure, de la conception du design à la mise en ligne.
             </p>
-
-            <p>
+            <p class="home--intro__p2">
                 Je vous propose des services de <strong>webdesign</strong>, de <strong>développement web</strong> et de <strong>SEO</strong>, 
-                pour vous permettre de vous démarquer sur le web et valoriser votre activité. Mon objectif est de créer des sites internet 
-                performants, esthétiques et optimisés pour le référencement naturel afin d'améliorer votre visibilité en ligne.
+                pour vous permettre de vous démarquer sur le web et valoriser votre activité. Mon objectif est de créer 
+                des sites internet <strong>performants</strong>, <strong>esthétiques</strong> et <strong>optimisés</strong> pour le référencement naturel 
+                afin d'améliorer votre visibilité en ligne.
             </p>
         </section>
 
         <section id="portfolio" class="home--projects">
             <div class="home--projects__intro">
                 <div>
-                    <span class="title">Mes réalisations</span>
-                    <span class="pr-txt">Sélection des projets</span>
-                    <div class="img-arw">
+                    <span class="title hp-gsap-projects-t">Mes réalisations</span>
+                    <span class="pr-txt hp-gsap-projects-txt">Sélection des projets</span>
+                    <div class="img-arw hp-gsap-projects-arw">
                         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="27.5" cy="27.5" r="27.5" fill="#282424"/>
                             <path d="M41.7071 28.7071C42.0976 28.3166 42.0976 27.6834 41.7071 27.2929L35.3431 20.9289C34.9526 20.5384 34.3195 20.5384 33.9289 20.9289C33.5384 21.3195 33.5384 21.9526 33.9289 22.3431L39.5858 28L33.9289 33.6569C33.5384 34.0474 33.5384 34.6805 33.9289 35.0711C34.3195 35.4616 34.9526 35.4616 35.3431 35.0711L41.7071 28.7071ZM14 29H41V27H14V29Z" fill="white"/>

@@ -28,10 +28,12 @@
             text-transform: uppercase;
             text-align: center;
             color: $pink;
+            opacity: 0;
         }
         & nav {
             display: flex;
             justify-content: center;
+            opacity: 0;
             ul {
                 display: flex;
                 align-items: center;
@@ -85,6 +87,7 @@
         border: $pink 2px solid;
         font-size: .5rem;
         backdrop-filter: blur(1px);
+        opacity: 0;
         span {
             text-transform: uppercase;
             color: $pink;

@@ -13,6 +13,7 @@
             padding-top: 2rem;
             h1 {
                 text-align: center;
+                opacity: 0;
                 @include screen550 {
                     font-size: 3rem;
                 }
@@ -29,6 +30,7 @@
                 max-width: 750px;
                 font-family: $fontBodyText;
                 font-weight: 300;
+                opacity: 0;
             }
         }
         &__tags {
@@ -40,9 +42,11 @@
             h5 {
                 border: $black 1px solid;
                 padding: .2rem .4rem;
+                opacity: 0;
             }
             span {
                 display: block;
+                opacity: 0;
             }
             span:first-child {
                 font-family: $displayFont;
@@ -67,21 +71,68 @@
         }
     }
     &--intro {
-        p {
-            padding: 2rem 1rem;
-            margin: 0 auto;
-            font-size: 1.4rem;
-            max-width: 900px;
+        & p {
+            display: none;
+            font-size: 1.5rem;
             strong {
                 font-family: $fontBodyTextSBdIt;
             }
+            @include screen550 {
+                display: block;
+            }
+            @include screen400 {
+                font-size: 1.2rem;
+            }
         }
-        p:first-child {
+        .home--intro__p1 {
+            padding: 6rem 1rem 5rem 1rem;
+
+        }
+        .home--intro__p2 {
+            padding: 0rem 1rem 6rem 1rem;
+        }
+        .scroll-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            @include screen550 {
+                display: none;
+            }
+            .line {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 60px;
+                & span {
+                    font-size: 1.8rem;
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    @include screen1024 {
+                        font-size: 1.3rem;
+                    }
+                    @include screen768 {
+                        font-size: 1rem;
+                    }
+                    strong {
+                        font-family: $fontBodyTextSBdIt;
+                    }
+                }
+            }
+        }
+        .hp-gsap-intro-scroll {
             padding-top: 6rem;
-            padding-bottom: 3rem;
+            padding-bottom: 5rem;
+            @include screen1024 {
+                padding: 6rem 1rem 5rem 1rem;
+            }
         }
-        p:last-child {
+        .hp-gsap-intro-scroll-2 {
             padding-bottom: 6rem;
+            @include screen1024 {
+                padding: 0rem 1rem 6rem 1rem;
+            }
         }
         &::before {
             content: '';
@@ -103,7 +154,7 @@
     &--projects {
         &__intro {
             background-color: $pink;
-            min-height: 600px;
+            min-height: 80dvh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -128,6 +179,9 @@
                     @include screen550 {
                         font-size: 3rem;
                     }
+                    @include screen400 {
+                        font-size: 2rem;
+                    }
                 }
                 .pr-txt {
                     text-transform: uppercase;
@@ -139,6 +193,7 @@
                     margin-top: 1rem;
                     align-self: flex-end;
                     transform: rotate(45deg);
+
                 }
             }
             .square-container {
@@ -240,6 +295,7 @@
             .extr-date {
                 display: flex;
                 margin-bottom: 1rem;
+                overflow: hidden;
                 > div {
                     span {
                         color: $yellow;
@@ -342,6 +398,10 @@
                     h3 {
                         padding-bottom: 1rem;
                     }
+                    @include screen550 {
+                        padding: 1.5rem 1rem;
+                        margin: 1rem .5rem;
+                    }
                 }
             }
             & .intro-s {
@@ -374,6 +434,9 @@
                         height: 20px;
                         width: 20px;
                         background-color: $black;
+                        @include screen550 {
+                            top: 2%;
+                        }
                     }
                 }
                 @include screen768 {
@@ -393,6 +456,10 @@
                         width: 20px;
                         background-color: $black;
                         clip-path: polygon(0 0, 0% 100%, 100% 100%);
+                        @include screen550 {
+                            bottom: 2%;
+                            left: 2%;
+                        }
                     }
                 }
                 div:last-child {
@@ -407,6 +474,9 @@
                         width: 20px;
                         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
                         background-color: $white;
+                        @include screen550 {
+                            top: 2%;
+                        }
                     }
                     h3, p {
                         color: $white;
@@ -438,6 +508,10 @@
                     border: $black 2px dotted;
                     border-top: none;
                     border-left: none;
+                    @include screen550 {
+                        bottom: 2%;
+                        right: 2%;
+                    }
                 }
                 h3 {
                     padding-bottom: 1rem;
@@ -448,6 +522,10 @@
                 @include screen768 {
                     width: auto;
                     margin: 1rem;
+                }
+                @include screen550 {
+                    padding: 1.5rem 1rem;
+                    margin: 1rem .5rem;
                 }
             }
         }

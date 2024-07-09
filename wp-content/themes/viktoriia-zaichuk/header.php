@@ -27,8 +27,8 @@
     <header class="header">
         <img class="header--img" src="<?php echo get_template_directory_uri(); ?>/assets/images/web-designer-toulouse.webp" alt="Web designer Toulouse">
         <div class="header--blck">
-            <h2>Création de Sites Sur Mesure</h2>
-            <nav>
+            <h2 class="loader-gsap-h2">Création de Sites Sur Mesure</h2>
+            <nav class="loader-gsap-nav">
                 <ul>
                     <li class="nav-button"><a href="#about">A propos</a></li>
                     <li class="nav-button"><a href="#portfolio">Portfolio</a></li>
@@ -37,7 +37,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="header--tags">
+        <div class="header--tags loader-gsap-tags">
             <span>ux</span>
             <span>ui</span>
             <span>design</span>

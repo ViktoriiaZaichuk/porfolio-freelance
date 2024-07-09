@@ -1,0 +1,63 @@
+/* Loader */
+.loader {
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loader-number {
+        font-size: 2rem;
+        color: $black;
+        align-self: flex-end;
+        justify-self: flex-end;
+        padding-right: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include screen1024 {
+            font-size: 1.5rem;
+        }
+        @include screen550 {
+            font-size: 1rem;
+            padding-right: .5rem;
+        }
+    }
+    .loader-txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & span {
+            font-family: $displayFont;
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+        .space {
+            padding: 0 .5rem;
+        }
+        @include screen768 {
+            span {
+                font-size: 2rem;
+            }
+        }
+        @include screen550 {
+            span {
+
+                font-size: 1.5rem;
+            }
+            .space {
+                padding: 0 .2rem;
+            }
+        }
+        @include screen400 {
+            span {
+
+                font-size: 1rem;
+            }
+        }
+    }
+}
